@@ -1,9 +1,9 @@
 # RxAndroid-demo
 Demonstrate project for RxAndroid
-#### I.Filter number
+## I.Filter number
 ##### 1.Filter even number
 Filter even numbers
-```
+```java
 View filterEvenNumbers = findViewById(R.id.filter_even_number_button);
 filterEvenNumbers.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -40,7 +40,7 @@ filterEvenNumbers.setOnClickListener(new View.OnClickListener() {
 ```
 ##### 2.For each list number
 Iterating with "forEach"
-```
+```java
 View forEachButton = findViewById(R.id.for_each_button);
 forEachButton.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -60,7 +60,7 @@ forEachButton.setOnClickListener(new View.OnClickListener() {
 ```
 ##### 3.Take only N value from start
 Take only the first 2 values emitted
-```
+```java
 View takeTwoValue = findViewById(R.id.take_two_value_button);
 takeTwoValue.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -91,7 +91,7 @@ takeTwoValue.setOnClickListener(new View.OnClickListener() {
 ```
 ##### 4.Take only first value
 Take only the first value emitted
-```
+```java
 View first = findViewById(R.id.first_button);
 first.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -122,7 +122,7 @@ first.setOnClickListener(new View.OnClickListener() {
 ```
 ##### 5.Take only last value
 Take only the last value emitted
-```
+```java
 View last = findViewById(R.id.last_button);
 last.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -153,7 +153,7 @@ last.setOnClickListener(new View.OnClickListener() {
 ```
 ##### 6.Take only unique value
 Remove duplicate values emitted
-```
+```java
 View distinct = findViewById(R.id.distinct_button);
 distinct.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -188,10 +188,10 @@ distinct.setOnClickListener(new View.OnClickListener() {
 
 // Return: 19057
 ```
-#### II.Group data
+## II.Group data
 ##### 1.Group by value with the same propertive
 Group by value with the same propertive
-```
+```java
 View groupBy = findViewById(R.id.group_by_button);
 groupBy.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -234,7 +234,7 @@ groupBy.setOnClickListener(new View.OnClickListener() {
 ```
 ##### 2.Pase value to another data type before notify
 Does not have to emit items of the same type as the source Observable
-```
+```java
 View map = findViewById(R.id.map_button);
 map.setOnClickListener(new View.OnClickListener() {
     @Override
@@ -269,10 +269,10 @@ map.setOnClickListener(new View.OnClickListener() {
 
 // Return: -1256201652 and 63380186
 ```
-#### III.CLick event
+## III.CLick event
 ##### Set onlick's subcriber
 Remember that do not set onclick after subcriber
-```
+```java
 Observable<Void> clickEventFirstObservable = RxView.clicks(clickFirst);
 subscriptionClickFirst = clickEventFirstObservable.subscribe(new Action1<Void>() {
     @Override
@@ -284,7 +284,7 @@ subscriptionClickFirst = clickEventFirstObservable.subscribe(new Action1<Void>()
 #### IV.Edit text changed event
 ##### 1.Listening the on text change listener
 Note that nerver set AllTextCap propertive for the TextView instance.
-```
+```java
 EditText textChange = (EditText) findViewById(R.id.edit_text_change_button);
 subscriptionTextChange = RxTextView.textChangeEvents(textChange)
         .subscribe(new Action1<TextViewTextChangeEvent>() {
@@ -295,7 +295,7 @@ subscriptionTextChange = RxTextView.textChangeEvents(textChange)
         });
 ```
 ##### 2.Listening the on text change listener with a filter
-```
+```java
 TextView textChangeFilter = (TextView) findViewById(R.id.edit_text_filter_before_change_button);
 subscriptionTextChangeFilter = RxTextView.textChangeEvents(textChangeFilter)
         .filter(new Func1<TextViewTextChangeEvent, Boolean>() {
@@ -313,8 +313,11 @@ subscriptionTextChangeFilter = RxTextView.textChangeEvents(textChangeFilter)
         });
 ```
 
-#### V.Credit
+## V.Credit
 ##### 1.Mr.César Ferreira[^1]
+
 ##### 2.Realm blog[^2]
+
 [^1]: [Party tricks with RxJava, RxAndroid & Retrolambda](https://medium.com/swlh/party-tricks-with-rxjava-rxandroid-retrolambda-1b06ed7cd29c#.s8f4i2f1s)
+
 [^2]: [Reactive Android UI Programming with RxBinding](https://realm.io/news/donn-felker-reactive-android-ui-programming-with-rxbinding/)
