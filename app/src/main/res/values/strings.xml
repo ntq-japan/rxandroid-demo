@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RxAndroidDemo</string>
+    <string name="screen_filter_numbers">Filter numbers screen</string>
+    <string name="screen_group">Group screen</string>
+    <string name="screen_on_click">On click screen</string>
+    <string name="screen_edit_text">Edit text screen</string>
+
+    <string name="button_click_first">Click here and check the log</string>
+    <string name="button_click_late">Click here and check the log</string>
+    <string name="button_click_old_style">Click here and check the log</string>
+    <string name="button_filter_even_number">Filter even numbers</string>
+    <string name="button_for_each">For each</string>
+    <string name="button_take_two_value">Take two value</string>
+    <string name="button_first">First value</string>
+    <string name="button_last">Last value</string>
+    <string name="button_distinct">Distinct value</string>
+    <string name="button_group_by">Group by value</string>
+    <string name="button_map">Map value</string>
+    <string name="button_edit_text_change">Input some text</string>
+    <string name="button_edit_text_filter_before_change">Text will filter by 2</string>
+</resources>

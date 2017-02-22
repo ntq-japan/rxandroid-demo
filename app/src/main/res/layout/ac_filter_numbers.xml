@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ac_click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ninja.lbs.rxandroid.OnClickActivity">
+
+    <TextView
+        android:id="@+id/filter_even_number_button"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/button_filter_even_number" />
+
+    <TextView
+        android:id="@+id/for_each_button"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/button_for_each" />
+
+    <TextView
+        android:id="@+id/take_two_value_button"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/button_take_two_value" />
+
+    <TextView
+        android:id="@+id/first_button"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/button_first" />
+
+    <TextView
+        android:id="@+id/last_button"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="@string/button_last" />
+
+    <TextView
+        android:id="@+id/distinct_button"
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/button_distinct" />
+
+    <ninja.lbs.rxandroid.view.CustomLog
+        android:id="@+id/custom_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
